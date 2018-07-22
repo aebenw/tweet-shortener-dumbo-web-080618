@@ -17,7 +17,7 @@ def word_substituter(string)
     array.each do |it|
       if word.include?(it)
         str += it.sub(it, replace) + " "
-      else if !(word.include(it))
+      else
         str += "#{it} "
       end
 

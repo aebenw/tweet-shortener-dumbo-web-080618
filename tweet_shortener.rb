@@ -15,10 +15,11 @@ def word_substituter(string)
   str = ""
   dictionary.each do |word, replace|
     array.each do |it|
-      if word.include?(it)
-        str += "#{replace} "
-      else str += "#{it} "
-      end
+      # if word.include?(it)
+      #   str += "#{replace} "
+      # else str += "#{it} "
+      # end
+      p it 
     end
   end
   str

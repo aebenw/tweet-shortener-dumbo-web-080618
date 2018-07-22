@@ -18,17 +18,15 @@ def word_substituter(string)
   array = string.split(" ")
   array.each do |word|
     if dictionary.has_key?(word)
-      word =
-  str = ""
-  dictionary.each do |word, replace|
-    array.each do |it|
-      if word.include?(it)
-        str += it.sub(it, replace) + " "
-      elsif !(word.include?(it))
-          str += "#{it} "
-      end
-
+      word = dictionary[word]
     end
   end
-  str
 end
+
+# str = ""
+#   dictionary.each do |word, replace|
+#     array.each do |it|
+#       if word.include?(it)
+#         str += it.sub(it, replace) + " "
+#       elsif !(word.include?(it))
+#           str += "#{it} "

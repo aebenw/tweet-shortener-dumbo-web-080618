@@ -12,8 +12,8 @@ end
 
 def word_substituter(string)
   string.split(" ").each do |word|
-    if word == dictionary.keys
-      word = dictionary.value 
+    if word.include?dictionary.keys
+      return true
     end
   end
 end

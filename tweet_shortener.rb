@@ -38,10 +38,10 @@ str =""
   dictionary.each do |word, replace|
     array.each do |it|
       if dictionary.has_key?(it)
-        str << replace
+        it.sub(it, replace)
       end 
     end
   end
-  str
+  array
 end
           

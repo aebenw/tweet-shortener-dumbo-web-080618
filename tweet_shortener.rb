@@ -32,10 +32,12 @@ end
 #   end
 # end
 
+def word_substituter(string)
 str = ""
   dictionary.each do |word, replace|
     array.each do |it|
-      if word.include?(it)
+      if dictionary.has_key()
         str += it.sub(it, replace) + " "
       elsif !(word.include?(it))
           str += "#{it} "
+          

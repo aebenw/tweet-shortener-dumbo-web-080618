@@ -17,8 +17,8 @@ end
 def word_substituter(string)
   array = string.split(" ")
   array.each do |word|
-    if dictionary.has_key?(word)
-      word = dictionary[word]
+    if dictionary.has_key?(word.downcase)
+      word = dictionary[word.downcase]
     end
   end
   array.join(" ")

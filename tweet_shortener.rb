@@ -22,5 +22,5 @@ def word_substituter(string)
       p it 
     end
   end
-  str
+  
 end

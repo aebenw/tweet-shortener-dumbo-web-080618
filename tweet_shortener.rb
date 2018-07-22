@@ -10,7 +10,7 @@ def dictionary
   }
 end
 
-def word_substuter(string)
+def word_substituter(string)
   string.split(" ").each do |word|
     if word == dictionary.keys
       word = dictionary.value 

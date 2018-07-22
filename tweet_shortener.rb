@@ -36,7 +36,7 @@ def word_substituter(string)
 array = string.split(" ")
   dictionary.each do |word, replace|
     array.each do |it|
-      if dictionary.has_key(it)
+      if dictionary.has_key?(it)
         it = replace
       end 
     end

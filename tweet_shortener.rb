@@ -32,10 +32,10 @@ end
 #   end
 # end
 
-# str = ""
-#   dictionary.each do |word, replace|
-#     array.each do |it|
-#       if word.include?(it)
-#         str += it.sub(it, replace) + " "
-#       elsif !(word.include?(it))
-#           str += "#{it} "
+str = ""
+  dictionary.each do |word, replace|
+    array.each do |it|
+      if word.include?(it)
+        str += it.sub(it, replace) + " "
+      elsif !(word.include?(it))
+          str += "#{it} "

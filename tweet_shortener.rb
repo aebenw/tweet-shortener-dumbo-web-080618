@@ -9,11 +9,11 @@ def dictionary
 "and" => "&",
   }
 end
-p dictionary.keys
-# def word_substituter(string)
-#   string.split(" ").each do |word|
-#     if word.include?dictionary.keys
-#       return true
-#     end
-#   end
-# end
+
+def word_substituter(string)
+  string.split(" ").each do |word|
+    if word.include?dictionary.keys
+      return true
+    end
+  end
+end

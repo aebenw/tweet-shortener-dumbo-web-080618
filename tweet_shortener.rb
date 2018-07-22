@@ -34,10 +34,11 @@ end
 
 def word_substituter(string)
 array = string.split(" ")
+str =""
   dictionary.each do |word, replace|
     array.each do |it|
       if dictionary.has_key?(it)
-        it = replace
+        str << replace
       end 
     end
   end

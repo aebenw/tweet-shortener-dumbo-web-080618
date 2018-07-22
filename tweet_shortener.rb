@@ -21,6 +21,7 @@ def word_substituter(string)
       word = dictionary[word]
     end
   end
+  array.join(" ")
 end
 
 # str = ""

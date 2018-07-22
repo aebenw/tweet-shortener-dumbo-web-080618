@@ -23,14 +23,14 @@ end
 #   array_temp.join(" ")
 # end
 
-def word_substituter(string)
-  array = string.split(" ")
-  array.each do |word|
-    if dictionary.has_key?(word.downcase)
-      p word
-    end
-  end
-end
+# def word_substituter(string)
+#   array = string.split(" ")
+#   array.each do |word|
+#     if dictionary.has_key?(word.downcase)
+#       word = dictionary
+#     end
+#   end
+# end
 
 # str = ""
 #   dictionary.each do |word, replace|

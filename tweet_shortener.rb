@@ -23,25 +23,25 @@ end
 #   array_temp.join(" ")
 # end
 
-# def word_substituter(string)
-#   array = string.split(" ")
-#   array.each do |word|
-#     if dictionary.has_key?(word.downcase)
-#       word = dictionary
-#     end
-#   end
-# end
-
 def word_substituter(string)
-array = string.split(" ")
-str =""
-  dictionary.each do |word, replace|
-    array.each do |it|
-      if dictionary.has_key?(it)
-        it.sub(it, replace)
-      end 
+  array = string.split(" ")
+  array.each do |word|
+    if dictionary.has_key?(word.downcase)
+      word = dictionary[word]
     end
   end
-  array
 end
+
+# def word_substituter(string)
+# array = string.split(" ")
+# str =""
+#   dictionary.each do |word, replace|
+#     array.each do |it|
+#       if dictionary.has_key?(it)
+#         it.sub(it, replace)
+#       end 
+#     end
+#   end
+#   array
+# end
           

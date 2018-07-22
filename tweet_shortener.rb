@@ -12,11 +12,14 @@ end
 
 def word_substituter(string)
   array = string.split(" ")
+  str = ""
   dictionary.each do |word, replace|
     array.each do |it|
       if word.include?(it)
-        puts replace
+        str += replace
+      else str += it
       end
     end
   end
+  str
 end

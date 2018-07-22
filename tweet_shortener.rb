@@ -25,7 +25,7 @@ end
 
 def word_substituter(string)
   array = string.split(" ")
-  for i in 0..array.length[-1]
+  for i in 0..array.length-1
     if dictionary.has_key?(array[i].downcase)
       array[i] = dictionary[array[i].downcase]
     end

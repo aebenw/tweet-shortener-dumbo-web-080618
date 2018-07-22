@@ -19,8 +19,8 @@ def word_substituter(string)
       #   str += "#{replace} "
       # else str += "#{it} "
       # end
-      p it 
+      str  << it 
     end
   end
-  
+  str
 end

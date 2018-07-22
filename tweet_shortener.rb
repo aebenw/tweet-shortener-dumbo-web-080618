@@ -33,11 +33,14 @@ end
 # end
 
 def word_substituter(string)
-str = ""
+array = string.split(" ")
   dictionary.each do |word, replace|
     array.each do |it|
-      if dictionary.has_key()
-        str += it.sub(it, replace) + " "
-      elsif !(word.include?(it))
-          str += "#{it} "
+      if dictionary.has_key(it)
+        it = replace
+      end 
+    end
+  end
+  array
+end
           

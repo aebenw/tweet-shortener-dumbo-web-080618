@@ -17,7 +17,8 @@ end
 def word_substituter(string)
   array = string.split(" ")
   array.each do |word|
-    
+    if dictionary.has_key?(word)
+      word =
   str = ""
   dictionary.each do |word, replace|
     array.each do |it|

@@ -19,7 +19,7 @@ def word_substituter(string)
       if word.include?(it)
         str += it.sub(it, replace) + " "
       end
-    str += it
+
     end
   end
   str

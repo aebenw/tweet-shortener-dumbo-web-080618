@@ -9,18 +9,18 @@ def dictionary
 "and" => "&",
   }
 end
-p dictionary
 
-# def word_substituter(string)
-#   array = string.split(" ")
-#   str = ""
-#   dictionary.each do |word, replace|
-#     array.each do |it|
-#       if word.include?(it)
-#         str += it.sub(it, replace) + " "
-#       end
-#     str += it
-#     end
-#   end
-#   str
-# end
+
+def word_substituter(string)
+  array = string.split(" ")
+  str = ""
+  dictionary.each do |word, replace|
+    array.each do |it|
+      if word.include?(it)
+        str += it.sub(it, replace) + " "
+      end
+    str += it
+    end
+  end
+  str
+end

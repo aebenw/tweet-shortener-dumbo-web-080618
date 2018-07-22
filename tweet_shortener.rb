@@ -42,6 +42,6 @@ str =""
       end 
     end
   end
-  array
+  str
 end
           

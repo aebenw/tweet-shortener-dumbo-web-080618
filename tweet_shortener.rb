@@ -30,6 +30,7 @@ def word_substituter(string)
       word = dictionary[word]
     end
   end
+  array.join(" ")
 end
 
 # def word_substituter(string)
